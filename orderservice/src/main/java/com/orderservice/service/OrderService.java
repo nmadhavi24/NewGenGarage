@@ -2,6 +2,9 @@ package com.orderservice.service;
 
 import com.orderservice.repository.OrderRepository;
 
+@Service
+@RequiredArgsConstructor
+@Slf4j
 public class OrderService {
 	
 	private final OrderRepository repository;
@@ -10,6 +13,8 @@ public class OrderService {
 	    this.repository = repository;
 	}
 	
+
+	@Transactional
 	public void processOrder(OrderRequest request) {
 		 private final OrderRepository orderRepository;
 		 

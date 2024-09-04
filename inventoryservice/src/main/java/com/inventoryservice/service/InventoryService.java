@@ -2,6 +2,9 @@ package com.inventoryservice.service;
 
 import com.inventoryservice.repository.InventoryRepository;
 
+@Service
+@RequiredArgsConstructor
+@Slf4j
 public class InventoryService {
 	private final InventoryRepository repository;
 	

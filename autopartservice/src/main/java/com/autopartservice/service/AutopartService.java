@@ -2,6 +2,9 @@ package com.autopartservice.service;
 
 import com.autopartservice.AutopartRepository;
 
+@Service
+@RequiredArgsConstructor
+@Slf4j
 public class AutopartService {
 	
 	private final AutopartRepository repository;
